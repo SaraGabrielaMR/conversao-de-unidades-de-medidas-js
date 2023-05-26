@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Conversão de Unidades de Medidas </title>
+	<link rel="stylesheet" href="css\style.css">
+	<script src="javascript/script.js"> </script>
+</head>
+<body>
+	<div class="container">
+		<div id="titulo">
+			<h1> Conversões de Moedas </h1>
+		</div>
+		
+			<div class="formulario grid-item">
+				<label id="real"> Valor em Real: </label>
+				<input type="number" placeholder="Digite o valor aqui" id="valorReal">
+				
+					<button type="button" id="btnDolar" onclick="realDolar()"> Dólar </button>
+					<button type="button" id="btnEuro" onclick="realEuro()"> Euro </button>
+					<button type="button" id="btnLibra" onclick="realLibra()"> Libra </button>
+					<button type="button" id="btnYuanChines" onclick="realYuan()"> Yuan Chinês </button>
+				
+				<div id="result">
+					<span id="resultado"> </span>
+				</div>
+			</div>
+	
+		
+			<div class="formulario grid-item">
+				<label id="dolar"> Valor em Dólar: </label>
+				<input type="number" placeholder="Digite o valor aqui" id="valorDolar">
+		
+				<button type="button" id="btnReal" onclick="dolarReal()"> Real </button>
+				<button type="button" id="btnEuro" onclick="dolarEuro()"> Euro </button>
+				<button type="button" id="btnLibra" onclick="dolarLibra()"> Libra </button>
+				<button type="button" id="btnYuanChines" onclick="dolarYuan()"> Yuan Chinês </button>
+		
+				<div id="result">
+					<span id="resultado2"> </span>
+				</div>
+			</div>
+		
+	
+		
+			<div class="formulario grid-item">
+				<label id="euro"> Valor em Euro: </label>
+				<input type="number" placeholder="Digite o valor aqui" id="valorEuro">
+		
+				<button type="button" id="btnReal" onclick="euroReal()"> Real </button>
+				<button type="button" id="btnDolar" onclick="euroDolar()"> Dólar </button>
+				<button type="button" id="btnLibra" onclick="euroLibra()"> Libra </button>
+				<button type="button" id="btnYuanChines" onclick="euroYuan()"> Yuan Chinês </button>
+			
+				<div id="result">
+					<span id="resultado3"> </span>
+				</div>
+			</div>
+
+		
+			<div class="formulario grid-item">
+				<label id="libra"> Valor em Libra: </label>
+				<input type="number" placeholder="Digite o valor aqui" id="valorLibra">
+		
+				<button type="button" id="btnReal" onclick="libraReal()"> Real </button>
+				<button type="button" id="btnDolar" onclick="libraDolar()"> Dólar </button>
+				<button type="button" id="btnEuro" onclick="libraEuro()"> Euro </button>
+				<button type="button" id="btnYuanChines" onclick="libraYuan()"> Yuan Chinês </button>
+
+				<div id="result">
+					<span id="resultado4"> </span>
+				</div>
+			</div>
+
+			<div class="formulario grid-item">
+				<label id="yuan"> Valor em Yuan Chinês: </label>
+				<input type="number" placeholder="Digite o valor aqui" id="valorYuan">
+		
+				<button type="button" id="btnReal" onclick="yuanReal()"> Real </button>
+				<button type="button" id="btnDolar" onclick="yuanDolar()"> Dólar </button>
+				<button type="button" id="btnEuro" onclick="yuanEuro()"> Euro </button>
+				<button type="button" id="btnLibra" onclick="yuanLibra()"> Libra </button>
+
+				<div id="result">
+					<span id="resultado5"> </span>
+				</div>
+			</div>
+	</div>
+	
+	<div class="container2">
+
+		<div id="titulo2">
+			<h1> Conversão de Distâncias </h1>
+		</div>
+		
+		<div class="formulario grid-item2">
+			<label id="metros"> Valor em Metros: </label>
+			<input type="number" placeholder="Digite o valor aqui" id="valorMetros">
+		
+			<button type="button" id="btnCM" onclick="metrosCM()"> Centímetros </button>
+			<button type="button" id="btnMilimetros" onclick="metrosMilimetros()"> Milímetros </button>
+			<button type="button" id="btnKM" onclick="metrosKM()"> Km </button>
+			<button type="button" id="btnPes" onclick="metrosPes()"> Pés </button>
+			<button type="button" id="btnJardas" onclick="metrosJardas()"> Jardas </button>
+
+			<div id="result">
+				<span id="resultado6"> </span>
+			</div>
+		</div>
+		
+		<div class="formulario grid-item2">
+			<label id="cm"> Valor em Centímetros: </label>
+			<input type="number" placeholder="Digite o valor aqui" id="valorCM">
+		
+			<button type="button" id="btnMetros" onclick="cmMetros()"> Metros </button>
+			<button type="button" id="btnMilimetros" onclick="cmMilimetros()"> Milímetros </button>
+			<button type="button" id="btnKM" onclick="cmKM()"> Km </button>
+			<button type="button" id="btnPes" onclick="cmPes()"> Pés </button>
+			<button type="button" id="btnJardas" onclick="cmJardas()"> Jardas </button>
+
+			<div id="result">
+				<span id="resultado7"> </span>
+			</div>
+		</div>
+		
+		<div class="formulario grid-item2">
+			<label id="milimetros"> Valor em Milímetros: </label>
+			<input type="number" placeholder="Digite o valor aqui" id="valorMilimetros">
+		
+			<button type="button" id="btnMetros" onclick="milimetroMetros()"> Metros </button>
+			<button type="button" id="btnCM" onclick="milimetroCM()"> Centímetros </button>
+			<button type="button" id="btnKM" onclick="milimetroKM()"> Km </button>
+			<button type="button" id="btnPes" onclick="milimetroPes()"> Pés </button>
+			<button type="button" id="btnJardas" onclick="milimetroJardas()"> Jardas </button>
+
+			<div id="result">
+				<span id="resultado8"> </span>
+			</div>
+		</div>
+		
+		<div class="formulario grid-item2">
+			<label id="km"> Valor em Km: </label>
+			<input type="number" placeholder="Digite o valor aqui" id="valorKM">
+		
+			<button type="button" id="btnMetros" onclick="kmMetros()"> Metros </button>
+			<button type="button" id="btnCM" onclick="kmCM()"> Centímetros </button>
+			<button type="button" id="btnMilimetros" onclick="kmMilimetros()"> Milímetros </button>
+			<button type="button" id="btnPes" onclick="kmPes()"> Pés </button>
+			<button type="button" id="btnJardas" onclick="kmJardas()"> Jardas </button>
+
+			<div id="result">
+				<span id="resultado9"> </span>
+			</div>
+		</div>
+		
+		<div class="formulario grid-item2">
+			<label id="pes"> Valor em Pés: </label>
+			<input type="number" placeholder="Digite o valor aqui" id="valorPes">
+		
+			<button type="button" id="btnMetros" onclick="pesMetros()"> Metros </button>
+			<button type="button" id="btnCM" onclick="pesCM()"> Centímetros </button>
+			<button type="button" id="btnMilimetros" onclick="pesMilimetros()"> Milímetros </button>
+			<button type="button" id="btnKM" onclick="pesKM()"> Km </button>
+			<button type="button" id="btnJardas" onclick="pesJardas()"> Jardas </button>
+
+			<div id="result">
+				<span id="resultado10"> </span>
+			</div>
+		</div>
+		
+		<div class="formulario grid-item2">
+			<label id="jardas"> Valor em Jardas: </label>
+			<input type="number" placeholder="Digite o valor aqui" id="valorJardas">
+		
+			<button type="button" id="btnMetros" onclick="jardasMetros()"> Metros </button>
+			<button type="button" id="btnCM" onclick="jardasCM()"> Centímetros </button>
+			<button type="button" id="btnMilimetros" onclick="jardasMilimetros()"> Milímetros </button>
+			<button type="button" id="btnKM" onclick="jardasKM()"> Km </button>
+			<button type="button" id="btnPes" onclick="jardasPes()"> Pés </button>
+
+			<div id="result">
+				<span id="resultado11"> </span>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="container3">
+
+		<div id="titulo3">
+			<h1> Conversão de Temperaturas </h1>
+		</div>
+
+		<div class="formulario grid-item3">
+			<label id="celsius"> Valor em Grau Celsius: </label>
+			<input type="number" placeholder="Digite o valor aqui" id="valorCelsius">
+		
+			<button type="button" id="btnFahrenheit" onclick="celsiusFahrenheit()">  Fahrenheit </button>
+			<button type="button" id="btnKelvin" onclick="celsiusKelvin()"> Kelvin </button>
+
+			<div id="result">
+				<span id="resultado12"> </span>
+			</div>
+		</div>
+
+		<div class="formulario grid-item3">
+			<label id="fahrenheit"> Valor em Grau Fahrenheit: </label>
+			<input type="number" placeholder="Digite o valor aqui" id="valorFahrenheit">
+		
+			<button type="button" id="btnCelsius" onclick="fahrenheitCelsius()">  Celsius </button>
+			<button type="button" id="btnKelvin" onclick="fahrenheitKelvin()"> Kelvin </button>
+
+			<div id="result">
+				<span id="resultado13"> </span>
+			</div>
+		</div>
+
+			<div class="formulario grid-item3">
+				<label id="kelvin"> Valor em Grau Kelvin: </label>
+				<input type="number" placeholder="Digite o valor aqui" id="valorKelvin">
+			
+				<button type="button" id="btnCelsius" onclick="kelvinCelsius()">  Celsius </button>
+				<button type="button" id="btnFahrenheit" onclick="kelvinFahrenheit()"> Fahrenheit </button>
+	
+				<div id="result">
+					<span id="resultado14"> </span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+		
+		
+	
+		
+	
+</body>
+</html>
